@@ -10,11 +10,13 @@ Example
 ```
 sm = require("simple_module")
 
-print("printing random message..")
-print(sm.GetRandomMessage())
+print("random message...")
+msg = sm.GetRandomMessage()
+print(string.format("%s said '%s'", msg.Author, msg.Quote))
 
-print("printing first message..")
-print(sm.Messages[1])
+print("first message...")
+msg = sm.Messages[1]
+print(string.format("%s said '%s'", msg.Author, msg.Quote))
 
 ```
 
